@@ -1,11 +1,10 @@
-//@flow
-
 "use strict";
+
 var firstname = "Hien",
-  lastname = "pham";
+    lastname = "pham";
 
 var basePeople = {
-  getFullName: function(title) {
+  getFullName: function (title) {
     title = title || "";
     return "Hola " + title + this.firstname + " " + this.lastname;
   }
@@ -32,7 +31,7 @@ function People(firstname, lastname) {
 
 People.prototype.color = "Red";
 
-People.prototype.greet = function() {
+People.prototype.greet = function () {
   console.log("Hello!!" + this.fullname);
 };
 
@@ -50,7 +49,7 @@ var myName = new String("John");
 
 var number = new Number(1);
 
-let f = function() {
+let f = function () {
   this.a = 1;
   this.b = 2;
 };
@@ -60,7 +59,7 @@ let o = new f();
 f.prototype.b = 3;
 f.prototype.c = 4;
 
-var car = function(model) {
+var car = function (model) {
   model = model || "";
   this.model = model;
 };
@@ -87,7 +86,7 @@ var proto = Object.create(foo.prototype, {
   }
 });
 
-bar.prototype.dance = function() {
+bar.prototype.dance = function () {
   console.log("Let dance!");
 };
 bar.prototype = proto;
@@ -107,7 +106,7 @@ function Animal(name) {
 }
 // using prototype to share the getName function.
 // All the object points to the same to object prototype
-Animal.prototype.getName = function() {
+Animal.prototype.getName = function () {
   return this.name;
 };
 
@@ -119,7 +118,7 @@ function Dog(age) {
 
 Dog.prototype = new Animal();
 
-Dog.prototype.getSubAge = function() {
+Dog.prototype.getSubAge = function () {
   return this.age;
 };
 

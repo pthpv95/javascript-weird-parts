@@ -1,7 +1,7 @@
 "use strict";
 
 var myObj = {},
-  version = "1.0.0";
+    version = "1.0.0";
 
 myObj.fn = myObj.prototype = {
   myobj: version
@@ -9,7 +9,7 @@ myObj.fn = myObj.prototype = {
 
 var yeze = Object.create(myObj);
 
-yeze.prototype.hula = function() {
+yeze.prototype.hula = function () {
   return "ula";
 };
 
@@ -21,7 +21,7 @@ function Person(name) {
   console.log(name);
 }
 
-Person.prototype.greet = function() {
+Person.prototype.greet = function () {
   return "Hello " + this.name;
 };
 
@@ -33,10 +33,3 @@ console.log(Object.getPrototypeOf(alex) === Person.prototype);
 console.log(Object.getPrototypeOf(Person) === Function.prototype);
 
 Person.call(this, "abc");
-
-function isNumeric() {
-  return jQuery.isArray();
-}
-
-
-jQuery.extend()
