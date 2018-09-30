@@ -1,8 +1,9 @@
-function doSomething(ms) {
+export function doSomething(ms) {
   return new Promise(res => setTimeout(res, ms));
 }
 
 function saySomething() {}
+
 function failureCallback() {
   console.log("Unexpect error");
 }
@@ -11,3 +12,6 @@ function failureCallback() {
 //   .then(saySomething)
 //   .catch(failureCallback);
 
+export var topic = 'learning webpack';
+
+module.exports = 'learning webpack';

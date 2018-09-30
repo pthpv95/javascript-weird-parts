@@ -3,7 +3,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack src/app.js dist/bundle.js",
-    "build:prod":"webpack src/app.js dist/bundle.js -p",
+    "build:prod": "webpack-dev-server --entry ./src/app.js --output-filename ./dist/bundle.js -p",
     "prepublish": "yarn run build"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }

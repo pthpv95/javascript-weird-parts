@@ -1,6 +1,7 @@
-"use strict";
+// import {
+//   doSomething
+// } from './promise';
 
-// import _ from './underscore'
 var myObj = {},
   version = "1.0.0";
 
@@ -33,8 +34,11 @@ console.log(Object.getPrototypeOf(alex) === Person.prototype);
 
 console.log(Object.getPrototypeOf(Person) === Function.prototype);
 
-Person.call(this, "abc");
+Person.call(this, "abccd");
 
 function isNumeric() {
   // return jQuery.isArray();
 }
+
+
+// doSomething(200).then(() => console.log('Done!!'));

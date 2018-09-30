@@ -106,7 +106,7 @@ console.log(Object.getPrototypeOf(alex) === Person.prototype);
 
 console.log(Object.getPrototypeOf(Person) === Function.prototype);
 
-Person.call(this, "abc");
+Person.call(this, "abccd");
 
 function isNumeric() {
   // return jQuery.isArray();
