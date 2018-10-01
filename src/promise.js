@@ -1,12 +1,12 @@
-export function doSomething(ms) {
-  return new Promise(res => setTimeout(res, ms));
-}
+// export function doSomething(ms) {
+//   return new Promise(res => setTimeout(res, ms));
+// }
 
-function saySomething() {}
+// function saySomething() {}
 
-function failureCallback() {
-  console.log("Unexpect error");
-}
+// function failureCallback() {
+//   console.log("Unexpect error");
+// }
 
 // doSomething(200)
 //   .then(saySomething)
@@ -14,4 +14,4 @@ function failureCallback() {
 
 export var topic = 'learning webpack';
 
-module.exports = 'learning webpack';
+// module.exports = 'learning webpack';

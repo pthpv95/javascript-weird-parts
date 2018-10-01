@@ -1,6 +1,8 @@
-// import {
-//   doSomething
-// } from './promise';
+import {
+  topic
+} from './promise'
+
+import './css/main.css'
 
 var myObj = {},
   version = "1.0.0";
@@ -34,11 +36,12 @@ console.log(Object.getPrototypeOf(alex) === Person.prototype);
 
 console.log(Object.getPrototypeOf(Person) === Function.prototype);
 
-Person.call(this, "abccd");
+Person.call(this, "HienPham");
 
 function isNumeric() {
   // return jQuery.isArray();
 }
 
+console.log(topic);
 
 // doSomething(200).then(() => console.log('Done!!'));
