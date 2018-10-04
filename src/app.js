@@ -1,47 +1,51 @@
 import {
-  topic
+  topic,
+  doSomething
 } from './promise'
 
-import './css/main.css'
+import './css/main.scss'
 
-var myObj = {},
-  version = "1.0.0";
 
-myObj.fn = myObj.prototype = {
-  myobj: version
-};
+var result = doSomething();
 
-var yeze = Object.create(myObj);
+console.log(result);
 
-yeze.prototype.hula = function () {
-  return "ula";
-};
+// var myObj = {},
+//   version = "1.0.0";
 
-console.log(myObj.fn.myobj);
+// myObj.fn = myObj.prototype = {
+//   myobj: version
+// };
 
-function Person(name) {
-  this.name = name;
+// var yeze = Object.create(myObj);
 
-  console.log(name);
-}
+// yeze.prototype.hula = function () {
+//   return "ula";
+// };
 
-Person.prototype.greet = function () {
-  return "Hello " + this.name;
-};
+// console.log(myObj.fn.myobj);
 
-var alex = new Person("alex");
+// function Person(name) {
+//   this.name = name;
 
-// Check the object whether has refers to its prototype
-console.log(Object.getPrototypeOf(alex) === Person.prototype);
+//   console.log(name);
+// }
 
-console.log(Object.getPrototypeOf(Person) === Function.prototype);
+// Person.prototype.greet = function () {
+//   return "Hello " + this.name;
+// };
 
-Person.call(this, "HienPham");
+// var alex = new Person("alex");
 
-function isNumeric() {
-  // return jQuery.isArray();
-}
+// // Check the object whether has refers to its prototype
+// console.log(Object.getPrototypeOf(alex) === Person.prototype);
+
+// console.log(Object.getPrototypeOf(Person) === Function.prototype);
+
+// Person.call(this, "HienPham");
+
+// function isNumeric() {
+//   // return jQuery.isArray();
+// }
 
 console.log(topic);
-
-// doSomething(200).then(() => console.log('Done!!'));

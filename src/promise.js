@@ -12,6 +12,10 @@
 //   .then(saySomething)
 //   .catch(failureCallback);
 
+
+export const doSomething = () => {
+    return topic
+}
 export var topic = 'learning webpack';
 
 // module.exports = 'learning webpack';
